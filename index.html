@@ -29,9 +29,10 @@
             aria-describedby="emailHelp"
           />
           <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
+            <small>We'll never share your email with anyone else.</small>
           </div>
-          <label for="exampleInputEmail1" class="form-label mt-2"
+          <small class="inputRequired1 alert"></small>
+          <label for="exampleInputEmail1" class="form-label "
             >Confirm email*</label
           >
           <input
@@ -40,6 +41,7 @@
             id="confirmInputEmail"
             aria-describedby="emailHelp"
           />
+          <small class="inputRequired2 alert"></small>
           <!-- <div id="emailHelp" class="form-text">
             We'll never share your email with anyone else.
           </div> -->
@@ -48,28 +50,30 @@
           <label for="exampleInputPassword1" class="form-label"
             >Password*</label
           >
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
+          <input type="password" class="form-control" id="inputPassword" />
+          <small class="inputRequired3 alert"></small>
           <label for="exampleInputPassword1" class="form-label mt-2"
             >Confirm Password*</label
           >
           <input
             type="password"
             class="form-control"
-            id="exampleInputPassword1"
+            id="confirmInputPassword"
           />
+          <small class="inputRequired4 alert"></small>
         </div>
+
         <!-- <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div> -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+          Submit
+        </button>
       </form>
     </fieldset>
   </body>
+  <script src="./form.js"></script>
   <!-- JavaScript Bundle with Popper -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

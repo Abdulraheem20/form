@@ -5,3 +5,12 @@ fieldset{
     border-radius: 5%;
     background-color: gold;
 }
+.alert{
+    color: red;
+}
+.error{
+    border: 2px solid red;
+}
+.success{
+    border: 2px solid green;
+}
